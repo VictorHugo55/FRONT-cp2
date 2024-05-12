@@ -5,9 +5,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-/*body{
-     overflow-y: hidden; 
-}*/
+body{
+     background-color: #FCFFFF; 
+}
 /* MENU */
 nav{
     display: flex;
