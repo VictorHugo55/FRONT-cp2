@@ -1,0 +1,172 @@
+/* SELETOR UNIVERSAL - QUE MUDA A PAGINA TODA */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:#FCFFFF; 
+}
+/* MENU */
+nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100vw;
+    background-color: #FCFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.74);
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+#menu{
+    height: 20px;
+    background-color: #FCFFFF;
+    display: flex;
+    align-items: center;
+}
+#menu li{
+    display: inline;
+    padding: 2rem;
+    font-size: medium;
+    font-weight: 300;
+}
+#menu ul{
+    list-style-type: none;
+}
+#menu a{
+    text-decoration: none;
+    color: #2898BB;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+#menu a:hover{
+    color: #FCFFFF;
+    font-weight: 700;
+    font-style: normal;
+    color: #5730c2;
+}
+/* FIM DO MENU */
+
+/* h1 principal */
+.titulo{
+    margin-top: 7rem;
+    text-align: center;
+    color: #2898BB;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* posicionando todos os articles */
+article{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+}
+/* posicionando as imagens que ficam a esquerda dos texto */
+.spa img, .kids img{
+    width: 18rem;
+    margin: 0px 40px 40px 0px;
+}
+/* posicionando as imagens que ficam a direita dos textos */
+.comida img, .guia img{
+    width: 18rem;
+    margin: 0px 0px 40px 40px;
+}
+/* Posicionando e dando atributos ao titulo e conteudo dos serbiços */
+h3{
+    padding-top: 4rem;
+    font-size: 1.8rem;
+    color: #30302d;
+}
+article p{
+    width: 50rem;
+    font-size: 1rem;
+    color: #30302d;
+    margin: 2rem 0rem 2rem 0rem;
+}
+h4{
+    font-size: 1.2rem;
+    color: #30302d
+}
+.spa img{
+    float: left;
+}
+.comida{
+    clear: left;
+}
+.comida img{
+    float: right;
+}
+.kids{
+    clear: right;
+}
+.kids img{
+    float: left;
+}
+.guia{
+    clear: left;
+}
+.guia img{
+    float: right;
+}
+/* RODAPÉ */
+footer{
+    clear: right;
+    height: 60px;
+    background-color: #2898BB;
+    color: #FCFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+ /* REPOSIVIDADE PARA MONITORIAS MENORES */
+ @media only screen and (max-width: 900px) {
+    /* MENU */
+    nav{
+        height: 60px;
+    }
+    #menu a{
+        font-size: 1rem;
+    }
+    .titulo{
+        font-size: 1.3rem;
+    }
+    /* posicionando todos os articles */
+    article{
+        width: 38rem;
+    }
+    /* posicionando as imagens que ficam a esquerda dos texto */
+    .spa img, .kids img{
+        width: 13rem;
+    }
+    /* posicionando as imagens que ficam a direita dos textos */
+    .comida img, .guia img{
+        width: 13rem;
+    }
+    /* Posicionando e dando atributos ao titulo e conteudo dos serbiços */
+    h3{
+        font-size: 1.5rem;
+    }
+    article p{
+        width: 40rem;
+        font-size: 0.7rem;
+    }
+    h4{
+        font-size: 0.9rem;
+        color: #30302d
+    }
+
+    /* RODAPÉ */
+    footer{
+        font-size: 0.6rem;
+    }
+}
